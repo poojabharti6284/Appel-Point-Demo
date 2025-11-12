@@ -36,7 +36,7 @@
 						<li><a href="#footer" class="button-primary-contact">Contact us</a></li>
 					</ul>
 				</nav>
-					<div class="nav-icon" id="menuIcon">
+					<div class="nav-icon" >
       ☰
     </div>
 			</div>
@@ -520,29 +520,29 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			// Hide all FAQ content
+			
 			$('.faq-content').hide();
 
-			// Show the first FAQ content by default and add active class
+			
 			$('.faq-list .faq-bloack:first .faq-content').show();
 			$('.faq-list .faq-bloack:first .faq-question').addClass("active");
 
-			// Click event for FAQ questions
+			
 			$('.faq-question').click(function () {
 				const content = $(this).siblings('.faq-content');
 
-				// Toggle clicked FAQ
+				
 				content.slideToggle();
 				$(this).toggleClass("active");
 
-				// Close other FAQs
+				
 				$('.faq-content').not(content).slideUp();
 				$('.faq-question').not(this).removeClass("active");
 			});
 		});
 	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- latest jquery file -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script type="text/javascript">
 		(function ($) {
@@ -566,6 +566,8 @@
 			})
 
 		})(jQuery); 
+
+
 	</script>
 
 	<script>
@@ -575,15 +577,6 @@ const navLinks = document.querySelector('.nav-link');
 menuIcon.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
-</script>
-
-<script>
-   const menuBtn = document.getElementById('menuIcon');
-  const navMenu = document.querySelector('.nav-link');
-
-  menuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
 </script>
 
 </body>

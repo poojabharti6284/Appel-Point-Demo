@@ -290,8 +290,7 @@ a.button-primary-contact {
   background-color: black;
 }
 
-/* navbar-end */
-
+/* navbar-start */
 
 .navbar {
   color: black;
@@ -990,7 +989,6 @@ h4.faq-title {
   transform: scaleY(1);
 }
 
-/* When the question is active (open) hide the vertical bar to show a minus icon */
 .faq-question.active .vertical-line {
   transform: scaleY(0);
   opacity: 0;
