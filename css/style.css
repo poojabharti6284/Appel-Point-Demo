@@ -563,13 +563,12 @@ a.button-primary {
 
 .owl-carousel .owl-item img {
   position: relative;
-  left: 150px;
   width: auto;
+  display: inline;
 }
 
 .owl-dots {
   text-align: center;
-  margin-top: 20px;
 }
 
 .owl-dot {
@@ -580,41 +579,8 @@ a.button-primary {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-button.owl-prev {
-  width: 20px !important;
-  height: 20px !important;
-  font-size: 30px !important;
-  padding: 20px !important;
-}
-
-.services .owl-stage {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-button.owl-dot {
-  position: relative;
-  top: 7px;
-  left: 31px;
-}
-
-span {
-  border-color: #efefef;
-  color: #0d0628;
-  border: 2px solid #0d0628;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: .5em;
-  margin-right: .5em;
-  transition: transform .2s;
-  display: flex;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  font-size: xxx-large;
-  bottom: 2px;
+.owl-dot.active {
+  background-color: #000;
 }
 
 button.owl-prev {
@@ -626,21 +592,32 @@ button.owl-next {
   position: relative;
   left: 40px;
 }
-
+.services button.owl-dot {
+    margin: 0 14px;
+}
 .owl-theme .owl-dots .owl-dot span {
-  width: 20px;
+  width: 10px;
   height: 10px;
   margin: 0px 3px;
   background: #D6D6D6;
-  display: block;
   -webkit-backface-visibility: visible;
   transition: opacity .2s ease;
   border-radius: 30px;
 }
 
+.services .owl-stage{
+  flex: 1 1 calc(50% - 20px);
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .owl-dots {
+
+
   position: relative;
-  bottom: 62px;
+
 }
 
 /* slider section end */
@@ -656,11 +633,38 @@ button.owl-next {
   background-size: cover;
   overflow: hidden;
 }
-
-.owl-theme .owl-nav {
-  margin: 56px 495px 0;
+.services .owl-theme .owl-nav button {
+    width: 30px;
+    height: 30px;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: border-box;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
 }
 
+.services .owl-theme .owl-nav button span {
+    font-size: 50px;
+}
+.services .owl-theme .owl-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.owl-theme .owl-nav {
+  margin: 56px 0px 0;
+}
+.services .owl-dots {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .owl-item.active {
   background-color: #fff;
   border-radius: 8px;

@@ -24,14 +24,13 @@
 } */
 
 
-
 @media (max-width: 991px) {
   .nav-icon {
-    display: block; /* show hamburger icon */
+    display: block;
   }
 
   .nav-link {
-    display: none; /* hide menu by default */
+    display: none;
     flex-direction: column;
     background: #fff;
     position: absolute;
@@ -39,21 +38,29 @@
     right: 20px;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .nav-link.show {
-    display: flex; /* show when 'show' class added */
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    padding-top: 80px;
+    left: 0;
+    padding-bottom: 57px;
   }
+
 
   .nav-link-item {
     margin: 10px 0;
     color: #000;
   }
 
-  .left-text{
-	width: 30%;
+  .left-text {
+    width: 30%;
   }
+
   .right_text {
     width: 70%;
   }
@@ -61,6 +68,7 @@
   h1 {
     font-size: 42px;
   }
+
   p.peragraph {
     font-size: 16px;
   }
@@ -73,6 +81,7 @@
   .team {
     flex-direction: column;
   }
+
   .team-lft,
   .team-rgt {
     width: 100%;
@@ -82,6 +91,7 @@
     flex-direction: column;
     gap: 20px;
   }
+
   .left-footer,
   .footer-right {
     width: 100%;
@@ -115,8 +125,9 @@
     margin-bottom: 16px;
     font-size: 14px;
   }
+
   .container {
-	padding: 0 16px;
+    padding: 0 16px;
   }
 
   .navbar {
@@ -124,12 +135,12 @@
     justify-content: space-between;
   }
 
-      .bnr-rgt {
-        text-align: center;
-        width: 100%;
-    }
+  .bnr-rgt {
+    text-align: center;
+    width: 100%;
+  }
 
-	.nav-icon {
+  .nav-icon {
     display: block;
   }
 
@@ -142,11 +153,17 @@
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .nav-link.show {
-    display: flex; 
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    padding-top: 80px;
+    left: 0;
+    padding-bottom: 57px;
   }
 
   .nav-link-item {
@@ -156,11 +173,24 @@
   h1 {
     font-size: 32px;
   }
+
   h2 {
     font-size: 28px;
   }
+
   p.peragraph {
     font-size: 15px;
+  }
+
+  .services .owl-dots {
+    position: absolute;
+    bottom: 11px;
+  }
+
+  .services button.owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
   }
 
   .button-primary,
@@ -184,20 +214,32 @@
     padding: 0;
   }
 
+  .owl-carousel .owl-stage-outer {
+    flex: 1 1 calccalc(50% - 20px);
+  }
+
   .footer-head {
     flex-direction: column;
   }
+
   .left-footer,
   .footer-right {
     width: 100%;
   }
 
-  a.button-primary-contact{
-	margin-left: 0px;
+  .footer-right {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
   }
 
-  .left-content, .img{
-	display: none;
+  a.button-primary-contact {
+    margin-left: 0px;
+  }
+
+  .left-content,
+  .img {
+    display: none;
   }
 }
 
@@ -208,7 +250,7 @@
 
 @media (max-width: 479px) {
   .right_text {
-	align-items: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -218,7 +260,7 @@
 
   .container {
     max-width: none;
-	padding: 0 12px;
+    padding: 0 12px;
   }
 
   .peragraph {
@@ -233,7 +275,7 @@
 
   .faq-heading {
     margin-bottom: 24px;
-	font-size: 24px;
+    font-size: 24px;
   }
 
   .footer {
